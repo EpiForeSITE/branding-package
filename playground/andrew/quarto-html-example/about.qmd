@@ -1,0 +1,10 @@
+---
+title: "Page 2"
+brand:
+    color:
+        primary: "#787878"
+---
+
+You can set `brand` features for specific pages that differ from the global features defined in `_brand.yml`. In this case, we've changed the primary color, which is reflected in the navigation bar.
+
+Note, however, that when you provide page-specific `brand` values the given page ignores most other values defined in `_brand.yml`, even the `_brand.yml` values not specified. Thus, by setting a new primary color for this page (and nothing else), we've lost our fonts and colors (which reverted to Quarto defaults), but retained our logo (which can only be defined in `_brand.yml`).

@@ -1,0 +1,35 @@
+---
+title: "HTML Example of `_brand.yml` in Quarto"
+---
+
+This website is an example of using `_brand.yml` within a Quarto project.
+
+`brand.yml` is only supported in Quarto v1.6.X or higher and in the following Quarto formats: `html`, `dashboard`, `revealjs`, and `typst` ([source](https://quarto.org/docs/authoring/brand.html)).
+
+It is as simple as dropping a `_brand.yml` file in the root of the project files (same level as the `_quarto.yml` file), though you need to remove any reference to other themes such as:
+
+```
+format:
+  html:
+    theme: cosmo
+```
+
+Because those themes will be used instead of your `brand` values.
+
+# Header 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices ligula vitae ligula consectetur, eu sodales diam pulvinar. Nam volutpat volutpat nisi, sed convallis neque aliquam quis. 
+
+## Header 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices ligula vitae ligula consectetur, eu sodales diam pulvinar. Nam volutpat volutpat nisi, sed convallis neque aliquam quis. 
+
+### Header 3
+
+* Bullet 1
+* Bullet 2
+
+```{r}
+sum_fun <- function(x, y) { x + y }
+sum_fun(2, 3)
+```

@@ -1,0 +1,18 @@
+color:
+  palette:
+    foresite-dark-grey: "#787878"
+    foresite-yellow: "#FDB921"
+    foresite-red: "#A60F2D"
+  background: white
+  foreground: black
+  primary: foresite-red
+
+logo: 
+  large: foresite-logo.png
+
+typography:
+  fonts:
+    - family: Jura
+      source: google
+  base: Jura
+  headings: Jura

@@ -5,3 +5,6 @@
 ._bakgit/*
 rbranding.Pproj
 rbranding.Rproj
+
+/.quarto/
+.DS_Store
