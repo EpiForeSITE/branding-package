@@ -6,6 +6,6 @@
 #' @export
 run_model <- function() {
   shinyAppDir(
-    system.file("app/", package = "rbranding")
+    system.file("/linked-view-interactions", package = "rbranding")
   )
 }

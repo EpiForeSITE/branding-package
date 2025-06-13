@@ -1,0 +1,55 @@
+{
+  "name": "R Development Environment",
+  "image": "rocker/geospatial:latest",
+  
+  // Configure tool-specific properties
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",
+        "RDebugger.r-debugger",
+        "ms-vscode.vscode-json"
+      ],
+      "settings": {
+        "r.rterm.linux": "/usr/local/bin/R",
+        "r.rpath.linux": "/usr/local/bin/R",
+        "r.rterm.option": [
+          "--no-save",
+          "--no-restore"
+        ]
+      }
+    }
+  },
+
+  // Environment variables to fix renv Docker issues
+  "remoteEnv": {
+    "RENV_CONFIG_INSTALL_TRANSACTIONAL": "FALSE",
+    "RENV_CONFIG_CACHE_ENABLED": "FALSE"
+  },
+
+  // Forward ports for RStudio Server
+  "forwardPorts": [8787, 3838],
+  "portsAttributes": {
+    "8787": {
+      "label": "RStudio Server",
+      "onAutoForward": "notify"
+    },
+    "3838": {
+      "label": "RStudio Server",
+      "onAutoForward": "notify"
+    }
+  },
+
+  // Install packages directly, skip renv restore during setup
+  "postCreateCommand": "R -e 'packages <- c(\"shiny\", \"leaflet\", \"DT\", \"htmltools\", \"bslib\", \"ggplot2\", \"palmerpenguins\", \"ragg\", \"thematic\", \"rmarkdown\", \"dplyr\", \"here\", \"yaml\", \"tinytest\"); install.packages(packages, repos=\"https://cloud.r-project.org\")'",
+
+  // Container settings
+  "shutdownAction": "stopContainer",
+  "remoteUser": "rstudio",
+  "workspaceFolder": "/workspace",
+  
+  // Mount workspace
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ]
+}
