@@ -2,20 +2,29 @@
 # https://github.com/posit-dev/brand-yml/tree/5bb1c92334ef4f63e3eeb84f98749cca5f1fdc68/schema
 meta:
   name:
-    full: Utah Department of Health and Human Services
-    short: UDHHS
+    full: Example Organization
+    short: EXORG
+  description: "A placeholder organization for demonstration purposes."
   link:
-    home: https://dhhs.utah.gov/
-    github: https://github.com/utahhhs
-
+    home: https://example.org/
+    github: https://github.com/exampleorg
+    docs: https://example.org/docs
+    contact: https://example.org/contact
+  author:
+    name: Jane Doe
+    email: janedoe@example.org
+    url: https://example.org/janedoe
 logo:
   images:
     full:
-      path: udhhs_logo.png
-      alt: DHHS logo
+      path: logo.png
+      alt: Organization logo
     icon:
-      path: udhhs_icon.png
-      alt: DHHS icon
+      path: icon.png
+      alt: Organization icon
+    favicon:
+      path: favicon.ico
+      alt: Favicon
   small: icon
   large: full
 
@@ -24,10 +33,23 @@ color:
     teal: "#1c8478"
     purple: "#4e2d53"
     gray: "#474747"
+    blue: "#2176ff"
+    green: "#43aa8b"
+    yellow: "#ffd166"
+    red: "#ef476f"
+    orange: "#ff8800"
+    pink: "#e55982"
+    brown: "#8d5524"
+    black: "#000000"
+    white: "#ffffff"
   foreground: black
   background: white
   primary: teal
-  secondary: teal
+  secondary: blue
+  accent: purple
+  error: red
+  warning: orange
+  info: green
 
 typography:
   fonts:
@@ -39,6 +61,37 @@ typography:
   headings:
        family: Open Sans
        weight: 400
+  code:
+    family: IBM Plex Mono
+    weight: 400
+  size:
+    base: 16px
+    headings: 20px
+# Additional schema elements
+button:
+  style:
+    borderRadius: 4px
+    padding: 8px 16px
+    fontWeight: 600
+    background: teal
+    color: white
+    hover:
+      background: purple
+      color: white
+
+card:
+  style:
+    borderRadius: 8px
+    boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
+    background: white
+    color: black
+
+table:
+  style:
+    headerBackground: teal
+    headerColor: white
+    rowBackground: white
+    rowColor: black
 
 
 
