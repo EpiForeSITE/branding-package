@@ -28,7 +28,6 @@ logo:
   small: icon
   large: full
 
-color:
   palette:
     teal: "#1c8478"
     purple: "#4e2d53"
@@ -46,12 +45,7 @@ color:
   background: white
   primary: teal
   secondary: blue
-  accent: purple
-  error: red
-  warning: orange
-  info: green
 
-typography:
   fonts:
     - family: Open Sans
       source: google
@@ -61,37 +55,16 @@ typography:
   headings:
        family: Open Sans
        weight: 400
-  code:
-    family: IBM Plex Mono
+typography:
+  fonts:
+    - family: Open Sans
+      source: google
+    - family: IBM Plex Mono
+      source: google
+  base: IBM Plex Mono
+  headings:
+    family: Open Sans
     weight: 400
-  size:
-    base: 16px
-    headings: 20px
-# Additional schema elements
-button:
-  style:
-    borderRadius: 4px
-    padding: 8px 16px
-    fontWeight: 600
-    background: teal
-    color: white
-    hover:
-      background: purple
-      color: white
-
-card:
-  style:
-    borderRadius: 8px
-    boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
-    background: white
-    color: black
-
-table:
-  style:
-    headerBackground: teal
-    headerColor: white
-    rowBackground: white
-    rowColor: black
 
 
 
