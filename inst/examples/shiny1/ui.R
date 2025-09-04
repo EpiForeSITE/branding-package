@@ -16,6 +16,8 @@ brand_colors <- brand$color
 dput(brand_colors)
 
 ui <- bslib::page_sidebar(
+    # This fixes a common accessibility issue with shiny apps
+    tags$head(HTML("<html lang='en'>")),
     theme = bs_theme(),
 
   title = tags$h1("Simple Shiny"),
