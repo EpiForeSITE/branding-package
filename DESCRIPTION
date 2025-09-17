@@ -1,44 +1,48 @@
-Package: rbranding
 Type: Package
+Package: rbranding
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Authors@R: c(
-    person(
-      "Willy", "Ray",
-      email = "william.ray@hsc.utah.edu",
-      role = c("aut", "cre")
-    )
+    person("Willy", "Ray", , "william.ray@hsc.utah.edu", role = c("aut", "cre")),
+    person("Andrew", "Pulsipher", , "pulsipher.a@gmail.com", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-0773-3210")),
+    person("Centers for Disease Control and Prevention's Center for Forecasting and Outbreak Analytics", role = "fnd",
+           comment = "Cooperative agreement CDC-RFA-FT-23-0069")
   )
 Author: Willy Ray [aut, cre]
 Maintainer: Willy Ray <william.ray@hsc.utah.edu>
 Description: More about what it does (maybe more than one line).
     Continuation lines should be indented.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.3.2
-Roxygen: list(markdown = TRUE)
+URL: https://epiforesite.github.io/rbranding/,
+    https://github.com/EpiForeSITE/rbranding
+BugReports: https://github.com/EpiForeSITE/rbranding/issues
 Imports:
+    credentials,
+    ggplot2,
+    htmltools,
     shiny,
-    htmltools,
     utils,
-    yaml,
-    ggplot2
+    yaml
 Suggests:
-    leaflet,
     DT,
+    grid,
+    here,
     htmltools,
-    utils,
+    knitr,
+    leaflet,
+    pkgdown,
+    plotly,
+    png,
+    rmarkdown,
+    showtext,
+    sysfonts,
     thematic,
     tinytest,
-    here,
-    pkgdown,
-    knitr,
-    rmarkdown,
-    sysfonts,
-    showtext,
-    grid,
-    png,
-    plotly
-URL: https://epiforesite.github.io/branding-package/
-VignetteBuilder: knitr
+    utils
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

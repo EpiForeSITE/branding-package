@@ -17,7 +17,10 @@ Reads configuration from config.yml. Handles download errors and file comparison
 }
 \examples{
 # Initialize config and local brand file
-brand_init()
+brand_init(get_default_brand = FALSE)
 # Update local brand file if needed
-get_brand()
+\dontrun{
+  # Don't run example (requires github access token)
+  get_brand()
+}
 }

@@ -19,5 +19,5 @@ Initializes the branding by creating a config.yml file with the remote and local
 This function is intended to be run once to set up the configuration for branding file management.
 }
 \examples{
-brand_init()
+brand_init(get_default_brand = FALSE)
 }
